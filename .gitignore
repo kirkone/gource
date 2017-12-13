@@ -1,0 +1,7 @@
+/Projects/*
+!/Projects/Sample
+/ffmpeg/*
+!/ffmpeg/readme.md
+/gource/*
+!/gource/readme.md
+*.mp4

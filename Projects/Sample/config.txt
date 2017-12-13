@@ -1,0 +1,23 @@
+[display]
+frameless=false
+multi-sampling=true
+no-vsync=true
+viewport=1920x1080
+
+[gource]
+auto-skip-seconds=1
+colour-images=true
+date-format=%d %B %Y
+file-idle-time=0
+filename-time=2
+font-size=36
+hide=mouse,progress
+key=true
+max-file-lag=3
+max-files=0
+max-user-speed=100
+seconds-per-day=0.1
+title=Sample
+file-extensions=false
+dir-colour=dddddd
+hash-seed=5
