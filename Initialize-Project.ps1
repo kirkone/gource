@@ -11,7 +11,7 @@ if (Test-Path -Path ".\Projects\$Project" ) {
 }
 
 New-Item -ItemType directory -Path ".\Projects\$Project" | Out-Null
-New-Item -ItemType File -Path ".\Projects\$Project\repositoties.txt" | Out-Null
+New-Item -ItemType File -Path ".\Projects\$Project\repositories.txt" | Out-Null
 
 "[display]
 frameless=false
