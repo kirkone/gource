@@ -5,6 +5,11 @@ Param (
     $Project
 )
 
+if (-not (Test-Path -Path ".\Projects\$Project") ) {
+    Write-Error "Project with the name '$Project does not exist!'"
+    return
+}
+
 if (!(Test-Path -Path ".\Projects\$Project\Logs" )) {
     Write-Verbose "Logs Directory not found, creating..."
     New-Item -ItemType directory -Path ".\Projects\$Project\Logs" | Out-Null

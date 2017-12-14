@@ -17,6 +17,11 @@ Function Get-StringHash([String] $String, $HashName = "MD5") {
     $StringBuilder.ToString()
 }
 
+if (-not (Test-Path -Path ".\Projects\$Project") ) {
+    Write-Error "Project with the name '$Project does not exist!'"
+    return
+}
+
 if (!(Test-Path -Path ".\Projects\$Project\Avatars" )) {
     Write-Verbose "Avatars Directory not found, creating..."
     New-Item -ItemType directory -Path ".\Projects\$Project\Avatars" | Out-Null

@@ -5,6 +5,11 @@ Param (
     $Project
 )
 
+if (-not (Test-Path -Path ".\Projects\$Project") ) {
+    Write-Error "Project with the name '$Project does not exist!'"
+    return
+}
+
 & .\gource\gource.exe `
     --load-config ".\Projects\$Project\config.txt" `
     --path ".\Projects\$Project\Logs\combined.txt" `
