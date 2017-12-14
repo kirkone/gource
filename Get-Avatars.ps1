@@ -5,7 +5,7 @@ Param (
     $Project,
 
     [Parameter(Mandatory = $false, Position = 2)]    
-    [string
+    [string]
     $Size = "90"
 )
 
